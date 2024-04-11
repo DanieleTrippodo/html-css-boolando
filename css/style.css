@@ -1,0 +1,190 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+
+
+/* *navbar ----------------------------------------------- */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+
+    width: 100%;                        /* *dimensioni della navbar */
+    height: auto;                          /* *<---------------- */
+    background-color: orange;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.item{                          /* *Sezione categoria a sinistra della navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    padding-left: 14%;                      /* *spazio a sinistra */
+    padding-right: 11%;                      /* *spazio a destra */
+}
+
+#logo-shop{
+    width: 150px;
+    height: 50%;
+    padding-top: 20px;
+}
+
+/* *navbar------------------------------------------------ */
+
+
+
+
+
+
+
+
+/* + special rule ! -------------------*/
+.fa-regular, .far {
+    font-weight: 400;
+    padding: 30px 20px;
+}
+/* + special rule ! ------------------ */
+
+
+
+
+
+
+
+
+
+
+/* ! Articoli shop ------------------------------------------------------------ */
+
+section.products{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+
+
+
+section.products > article{
+    position: relative;
+    margin-top: 3.3rem;
+
+    /* background-color: aqua; */
+    /* width: 380px; */
+    /* padding: 2rem; */
+}
+
+article.product > img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+article.product > span.discount-tag{
+    position: absolute;
+    top: 27rem;
+    right: 17.9rem;
+
+
+    width: 60px;
+    height: 20px;
+
+    color: white;
+    background-color: red;
+    font-size: 1rem;
+    padding-left: 18px;
+}
+
+
+article.product > span.discount-tag.sostenibilita{
+    background-color: green;
+    right: 10.8rem;
+    width: 110px;
+}
+
+
+
+/* + foto secondarie in hover ---------------------------------------------------------------------------- */
+
+/* todo Nasconde l'elemento di immagine predefinito all'interno dell'articolo */
+.product img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* todo Mostra la nuova immagine al passaggio del mouse sul primo articolo*/
+.immagine1:hover img {
+    content: url('../img/1b.webp');
+}
+
+
+/* todo Mostra la nuova immagine al passaggio del mouse sul secondo articolo*/
+.immagine2:hover img {
+    content: url('../img/2b.webp');
+}
+
+
+/* todo Mostra la nuova immagine al passaggio del mouse sul terzo articolo*/
+.immagine3:hover img {
+    content: url('../img/3b.webp');
+}
+
+
+/* todo Mostra la nuova immagine al passaggio del mouse sul quarto articolo*/
+.immagine4:hover img {
+    content: url('../img/4b.webp');
+}
+
+/* todo Mostra la nuova immagine al passaggio del mouse sul quinto articolo*/
+.immagine5:hover img {
+    content: url('../img/5b.webp');
+}
+
+/* todo Mostra la nuova immagine al passaggio del mouse sul sesto articolo*/
+.immagine6:hover img {
+    content: url('../img/6b.webp');
+}
+
+/* + FINE foto secondarie in hover ------------------------------------------------------------------------- */
+
+
+.marca{
+    font-size: 18px;
+    color: grey;
+}
+
+
+.name-article{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: black;
+    font-family: bold;
+}
+
+
+
+.prezzo{
+    color: red;
+    font-size: 18px;
+    font-family: bold;
+}
+
+.sconto{
+    color: grey;
+    font-size: 14px;
+    font-style: oblique;
+    text-decoration: line-through;
+}
+/* ! FINE Articoli shop -------------------------------------------------------- */
