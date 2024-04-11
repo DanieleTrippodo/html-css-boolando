@@ -188,3 +188,12 @@ article.product > span.discount-tag.sostenibilita{
     text-decoration: line-through;
 }
 /* ! FINE Articoli shop -------------------------------------------------------- */
+
+
+
+.footer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+}
