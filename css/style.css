@@ -30,7 +30,7 @@
 
     padding-left: 14%;                      /* *spazio a sinistra */
     padding-right: 11%;                      /* *spazio a destra */
-    gap: 1rem;
+    gap: 1rem;             /* * serve per fare spazio tra gli elementi nella stessa riga */
 }
 
 #logo-shop{
@@ -110,6 +110,19 @@ article.product > span.discount-tag.sostenibilita{
     right: 10.8rem;
     width: 110px;
 }
+
+
+/* + extra */
+.heart-tag{
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    padding: 1rem;
+
+    font-size: 20px;
+    background-color: white;
+}
+/* + extra */
 
 
 
