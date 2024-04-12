@@ -8,6 +8,9 @@
 
 
 
+
+
+
 /* *navbar ----------------------------------------------- */
 .navbar{
     display: flex;
@@ -68,15 +71,19 @@
 
 section.products{
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 2rem;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 12rem;
+    margin-right: 12rem;
 }
 
 
 
 section.products > article{
     position: relative;
-    margin-top: 3.3rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
 
     /* background-color: aqua; */
     /* width: 380px; */
